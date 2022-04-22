@@ -1,0 +1,22 @@
+* {
+    margin: 10px 10px;;
+}
+
+.marvel-card {
+    width: 35%;
+    height: 45%;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-img {
+    width: 90%;
+    height: 30%;
+}
+
+.marvel-hero {
+    text-align: center;
+    font-weight: bold;
+}
