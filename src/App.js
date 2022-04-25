@@ -22,9 +22,17 @@ const marvelHeroes = [
 function App() {
   return (
     <div className="App">
-      <Card url={marvelHeroes[0].img} name={marvelHeroes[0].name} superpower={marvelHeroes[0].superpower} weapons={marvelHeroes[0].weapons}/>
-      <Card url={marvelHeroes[1].img} name={marvelHeroes[1].name} superpower={marvelHeroes[1].superpower} weapons={marvelHeroes[1].weapons} />
-      <Card url={marvelHeroes[2].img} name={marvelHeroes[2].name} superpower={marvelHeroes[2].superpower} weapons={marvelHeroes[2].weapons} />
+        <h1>3 героя Marvel, которые мне нравятся</h1>  
+        <div className="cards-block">
+          {/* <Card url={marvelHeroes[0].img} name={marvelHeroes[0].name} superpower={marvelHeroes[0].superpower} weapons={marvelHeroes[0].weapons}/>
+          <Card url={marvelHeroes[1].img} name={marvelHeroes[1].name} superpower={marvelHeroes[1].superpower} weapons={marvelHeroes[1].weapons} />
+          <Card url={marvelHeroes[2].img} name={marvelHeroes[2].name} superpower={marvelHeroes[2].superpower} weapons={marvelHeroes[2].weapons} /> */}
+            {
+              marvelHeroes.map((marvelHero) =>
+                <Card name={marvelHero.name} url={marvelHero.img} superpower={marvelHero.superpower} weapons={marvelHero.weapons}></Card>
+            )
+            }
+        </div>
     </div>
   );
 }

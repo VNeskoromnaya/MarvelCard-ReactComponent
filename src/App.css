@@ -1,8 +1,16 @@
 .App {
   /* text-align: center; */
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+
+.App .cards-block {
+  display: flex;
   flex-direction: row;
-  align-items: baseline;
+  padding-top: 20px;
 }
 
 .App-logo {
